@@ -44,10 +44,12 @@
             this.pictureWolf = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureSheep = new System.Windows.Forms.PictureBox();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.Field.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWolf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSheep)).BeginInit();
             this.SuspendLayout();
@@ -139,6 +141,7 @@
             // Field
             // 
             this.Field.BackgroundImage = global::Wolf_and_Sheeps.Properties.Resources.grass4;
+            this.Field.Controls.Add(this.buttonHelp);
             this.Field.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Field.Location = new System.Drawing.Point(0, 100);
             this.Field.Name = "Field";
@@ -193,6 +196,17 @@
             this.pictureSheep.TabIndex = 0;
             this.pictureSheep.TabStop = false;
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.Location = new System.Drawing.Point(722, 324);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(78, 23);
+            this.buttonHelp.TabIndex = 0;
+            this.buttonHelp.Text = "Справка";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,6 +224,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.Field.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureWolf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSheep)).EndInit();
             this.ResumeLayout(false);
@@ -232,6 +247,7 @@
         private System.Windows.Forms.Timer timerSheep;
         private System.Windows.Forms.Timer timerWolf;
         private System.Windows.Forms.Button buttonGO;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }
 

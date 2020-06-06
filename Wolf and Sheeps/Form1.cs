@@ -218,7 +218,8 @@ namespace Wolf_and_Sheeps
                 for (int j = 0; j < numberSheeps; j++)
                 {
                     if (IsIntersect(Wolfs[i], Sheeps[j])) 
-                    { 
+                    {
+                        Sheeps[j].BackgroundImage = Properties.Resources.icons8_crossbones_64; // когда овечка умирает- появляется картинка костей
                         Sheeps.Remove(Sheeps[j]);
                         numberSheeps -= 1;
                         labelSheep.Text = numberSheeps.ToString();
@@ -237,6 +238,12 @@ namespace Wolf_and_Sheeps
         {
             WolfMoving();
             IntersectSheepsAndWolfs();
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            Help help = new Help();
+            help.Show();
         }
     }
 }

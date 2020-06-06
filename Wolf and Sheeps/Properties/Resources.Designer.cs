@@ -73,6 +73,16 @@ namespace Wolf_and_Sheeps.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_crossbones_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_crossbones_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_lamb_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8_lamb_64", resourceCulture);
